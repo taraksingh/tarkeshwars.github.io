@@ -6,7 +6,31 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <!DOCTYPE HTML>
 <html>
-<head>
+<head>	
+	<script>
+  window.fcWidget.init({
+    token: "deda4d5d-65ee-4430-afbb-d7f0234993a9",
+    host: "https://wchat.freshchat.com"
+  });
+</script>
+	<script>
+  // Make sure fcWidget.init is included before setting these values
+
+  // To set unique user id in your system when it is available
+  window.fcWidget.setExternalId("john.doe1987");
+
+  // To set user name
+  window.fcWidget.user.setFirstName("John");
+
+  // To set user email
+  window.fcWidget.user.setEmail("john.doe@gmail.com");
+
+  // To set user properties
+  window.fcWidget.user.setProperties({
+    plan: "Estate",                 // meta property 1
+    status: "Active"                // meta property 2
+  });
+</script>
 <!-- <meta http-equiv="refresh" content="0; url=http://www.fundamine.com/" /> -->
 <link rel="shortcut icon" href="./images/logo_lifetym.png" >
 <title>Lifetym: The best planning app</title>
